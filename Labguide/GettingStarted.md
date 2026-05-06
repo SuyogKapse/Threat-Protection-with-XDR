@@ -1,17 +1,20 @@
-# Threat Protection with XDR - Review and explore sentinel workspace and Integrate Logic App with Threat Protection and XDR - 1 & 2
-### Overall Estimated Duration: 150 minutes
+# Threat Protection with XDR
+
+### Overall Estimated Duration: 4 Hours
+
 ## Overview
 
-In this lab, you will explore the integration of Azure Sentinel, Microsoft Defender, and Logic Apps to enhance security operations and automate threat response. You will begin by reviewing and managing a pre-configured Azure Sentinel workspace, where you will investigate security incidents, configure automated responses, and analyze data to strengthen threat detection and response capabilities. Next, you will integrate Logic Apps with Threat Protection and Extended Detection and Response (XDR) solutions, enabling the creation of automated workflows and playbooks that streamline security alerts and actions. Additionally, you will configure connectors, onboard devices, and interact with Microsoft Defender for Cloud, providing you with practical experience in automating and centralizing threat intelligence and response.
+Threat Protection with Extended Detection and Response (XDR) is a game-changing paradigm in cybersecurity, providing an unparalleled shield against modern threats. Unlike conventional security measures, XDR doesn’t just stop at surface-level defense; it orchestrates a symphony of security layers, unifying disparate tools and technologies to create an impenetrable fortress for an organization.
 
-## Objective
+## Objectives
 
-Understand how to manage security incidents and automate responses using Azure Sentinel, Logic Apps, and Microsoft Defender for Cloud. Gain skills in configuring connectors, creating playbooks, and integrating threat protection across your organization’s security operations. By the end of this lab, you will be able to:
-
-- **Explore and Manage Azure Sentinel Workspace**: Learn to navigate and review a pre-configured Sentinel workspace to investigate security incidents, configure automated responses, and analyze data for threat detection.
-- **Integrate Logic Apps with Threat Protection and XDR**: Understand how to automate threat detection and response workflows by integrating Logic Apps with Threat Protection and Extended Detection and Response (XDR) systems, including configuring triggers and actions.
-- **Enable and Configure Microsoft Defender for Cloud**: Gain practical skills in enabling Microsoft Defender for Cloud, onboarding devices, and integrating them into the Sentinel workspace for real-time monitoring and incident management.
-- **Create and Manage Security Playbooks**: Develop the ability to create and update playbooks within Microsoft Sentinel, streamlining automated responses to security incidents and alerts within your organization’s cloud environment.
+- **Review and explore sentinel workspace**: In this lab, you will explore a pre-configured Azure Sentinel workspace, investigating security incidents, configuring automated responses, and analyzing data to strengthen threat detection and response capabilities within the Azure environment.
+- **Integrate Logic App with Threat Protection and XDR**
+- **Conduct attacks**
+- **Create Detections**
+- **Investigate an Incident**
+- **Threat Hunting using Notebooks with Microsoft Sentinel**
+- **Mitigate threats using Microsoft 365 Defender**
 
 ## Prerequisites
 
@@ -21,14 +24,6 @@ Participants should have:
 - **Experience with Azure Portal and Logic Apps**: Familiarity with navigating the Azure Portal and using Azure Logic Apps for automation and workflow management.
 Basic Security Operations Knowledge: Proficiency in security operations, including working with security incidents, alerts, and configuring threat detection tools.
 - **Basic Security Operations Knowledge**: Proficiency in security operations, including working with security incidents, alerts, and configuring threat detection tools.
-
-## Architecture
-
-In this lab, the architecture flow encompasses several key components essential for enhancing security operations. You will start by setting up an Azure Sentinel workspace and integrating Microsoft Defender for Cloud. At the core of the architecture is Azure Sentinel, which aggregates security data, manages incidents, and enables automated responses through Logic Apps. The integration of Microsoft Defender for Cloud enhances security posture by monitoring and protecting Azure resources. Logic Apps facilitate the automation of workflows, allowing for efficient handling of threat alerts and responses. Additionally, the architecture includes various connectors for data ingestion, such as the Windows Security Event Connector, enabling real-time monitoring of security incidents. This system promotes streamlined operations and effective threat management across the Azure environment.
-
-## Architecture Diagram
-
-![](./media/newarch03.png)
 
 ## Explanation of Components
 
@@ -49,7 +44,7 @@ Welcome to your Threat protection with XDR workshop! We've prepared a seamless e
  
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
  
-![](./media/img-01-01.png)
+![Access Your VM and Lab Guide](./media/labguide-0123.png)
 
 ### Virtual Machine & Lab Guide
  
