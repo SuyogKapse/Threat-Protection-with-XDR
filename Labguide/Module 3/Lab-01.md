@@ -1,4 +1,4 @@
-# Lab 01 - Conduct attacks
+# Lab 03 - Conduct attacks
 
 ### Estimated Duration: 90 minutes
 
