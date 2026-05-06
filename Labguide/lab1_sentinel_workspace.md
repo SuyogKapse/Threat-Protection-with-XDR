@@ -59,9 +59,9 @@ You start by initializing the Defender for the Endpoint environment. Next, you o
 
    ![](./media/lab01-task2-overview.png)
 
-1. Navigate to the **Data connectors** section in the left sidebar under *Configuration* and examine the currently configured connectors for collecting security-related data.
+1. Navigate to the **Data connectors** section in the left sidebar under **Configuration** and examine the currently configured connectors for collecting security-related data.
 
-   ![](./media/xdr2.png)
+   ![](./media/xdr21.png)
 
    >**Note:** The image is for reference only; your version may differ.
 
@@ -106,10 +106,11 @@ In this task, you will onboard a device to Microsoft Defender for Endpoint using
 
     ![](./media/settings-01.png)
 
-   >**Note:** If you face any issues while opening the Endpoint. follow the url: **https://security.microsoft.com/securitysettings/endpoints/onboarding**
-to access the endpoint resource
+   >**Note:** If you encounter any issues while opening the endpoint, please use the following URL and open it in a new browser tab to access the endpoint resource: **https://security.microsoft.com/securitysettings/endpoints/onboarding**
    
-1. Navigate to the **Onboarding (1)** option in the *Device Management section.*
+1. Navigate to the **Onboarding** option in the *Device Management section.*
+
+   ![](./media/xdr22.png)
 
 1. Under **Select operating system to start onboarding process:** make sure to select the **Windows Server 2019, 2022, and 2025**.
 
