@@ -1,6 +1,6 @@
 # Lab 05 - Investigate an Incident
 
-## Estimated Duration: 20 minutes
+## Lab scenario
 
 You are a Security Operations Analyst working at a company that implemented Microsoft Defender. You already created Scheduled and Microsoft Security Analytics rules. The Fusion and Anomalies Analytics rules are also enabled in your environment. Now is the time to investigate the Incidents created by them.
 

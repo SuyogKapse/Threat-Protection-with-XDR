@@ -1,6 +1,6 @@
 # Lab 07 - Mitigate threats using Microsoft 365 Defender 
 
-## Estimated Duration: 60 minutes
+## Lab scenario
 
 You're a Security Operations Analyst working at a company that implemented Microsoft Defender XDR solutions. You need to see the alerts in an incident to see the incident's full impact do a root cause investigation and mitigate these alerts using M365 Defender tools.
 
@@ -56,6 +56,8 @@ In this task, you will investigate and mitigate the alerts through recommendatio
 1. In the Microsoft Defender portal, navigate to the **Alerts** tab from the sidebar menu.
 
     ![Lab overview.](../media/lab10-task2-alerts.png)
+
+    >**Note:** It may take 24-48 hours for alerts to appear in the Defender portal. If they are not generated within the lab timeframe, you can go through the steps.
 
 1. You can click on any of these alerts to view the full details. Click on the alert named **Suspicious PowerShell command line**.
 

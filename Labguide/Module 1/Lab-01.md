@@ -14,8 +14,6 @@ In this lab, you will perform the following:
 - Task 2: Onboard a Device
 - Task 3: Explore Sentinel workspace
 
-### Estimated Duration: 30 minutes
-
 ## Task 1: Log in to Azure Portal
 
   In this task , you login to Azure Portal and allows you to manage and configure your cloud resources through a web-based interface.
@@ -80,7 +78,7 @@ In this task, you will onboard a device to Microsoft Defender for Endpoint using
 
 1. Right-click on the downloaded zip file, choose **Extract All...**, ensure that **Show extracted files when complete** is checked **(1)**, and then click **Extract (2)**.
 
-   ![](../media/lab1-05-l1.png) 
+   ![](../media/lab1-05-n1.png) 
 
 1. Right-click on the extracted file `WindowsDefenderATPLocalOnboardingScript.cmd` and choose **Properties**. Tick the **Unblock** checkbox located in the bottom right of the Properties window, and then click **OK**.
 

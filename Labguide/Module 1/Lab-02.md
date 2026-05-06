@@ -12,7 +12,6 @@ In this lab, you will perform the following:
 - Task 4: Create a Playbook in Microsoft Sentinel
 - Task 5: Update a Playbook in Microsoft Sentinel
 
-## Estimated Duration: 120 minutes
 
 ### Task 1: Connect the Windows security event connector
 

@@ -12,8 +12,6 @@ In this lab, you will simulate various attacks to detect and investigate in Micr
 - Task 3: Privilege Elevation Attack with User Add
 - Task 4: Playbook Creation
 
-### Estimated Duration: 90 minutes
-
 ### Task 1: Persistence Attack with Registry Key Add 
 
 >**Note:** Perform this task in your LAB-VM (svm).

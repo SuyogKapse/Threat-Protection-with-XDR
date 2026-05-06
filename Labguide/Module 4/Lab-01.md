@@ -1,6 +1,6 @@
 # Lab 06 - Threat Hunting using Notebooks with Microsoft Sentinel
 
-## Estimated Duration: 120 minutes
+## Lab scenario
 
 You are a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You have received threat intelligence about a Command and Control (C2 or C&C) technique.  You need to perform a hunt and watch for the threat.
 
@@ -199,11 +199,11 @@ In this task, you will use a Search job to look for a C2.
 
 1. On the **Newtable_SRCH** panel, click **Restore** to investigate the retrieved data.
 
-   ![](../media/ex3_g_tr_18.png)
+   ![](../media/lab1-05-l35.png)
  
 1. On the **Restoration** window, review the settings and click **Restore** to begin the process.
 
-   ![](../media/lab1-05-l35.png)
+   ![](../media/ex3_g_tr_19.png)
 
    > **Note:** If the restoration details or options are not visible, refresh the page.
 
@@ -241,7 +241,7 @@ In this task, you will explore using notebooks in Microsoft Sentinel.
 
     ![Picture 1](../media/img-01-104.png)
 
-    >**Note:** It may take a few minutes to deploy the Machine Learning workspace.
+    >**Note:** It may take a few minutes to deploy the Machine Learning workspace and the window closes automatically. 
 
 1. After the *Your deployment is complete* message appears, return to the **Microsoft Sentinel** portal.
 
@@ -260,6 +260,8 @@ In this task, you will explore using notebooks in Microsoft Sentinel.
     ![Picture 1](../media/img-01-107.png)
 
     ![Picture 1](../media/img-01-108.png)
+
+    >**Note:** if the workspace is not created click on create new workspace and follow from step 3-5.
 
 1. Once the saving is done, select the **Launch notebook** button. This will take you to the Microsoft Azure Machine Learning Studio.
 
