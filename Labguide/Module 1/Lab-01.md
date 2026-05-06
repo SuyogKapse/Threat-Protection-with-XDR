@@ -1,6 +1,6 @@
 # Lab 01 - Review and explore sentinel workspace
 
-### Estimated Duration: 30 minutes
+## Lab scenario
 
 In this lab, participants will explore a pre-configured Azure Sentinel workspace, investigating security incidents, configuring automated responses, and analyzing data to strengthen threat detection and response capabilities within the Azure environment.
 
@@ -13,6 +13,8 @@ In this lab, you will perform the following:
 - Task 1: Log in to Azure Portal
 - Task 2: Onboard a Device
 - Task 3: Explore Sentinel workspace
+
+### Estimated Duration: 30 minutes
 
 ## Task 1: Log in to Azure Portal
 
@@ -66,6 +68,7 @@ In this task, you will onboard a device to Microsoft Defender for Endpoint using
    - Click **Download onboarding package (5)**.
 
       ![](../media/t3_g_e1_2.png) 
+   
    > **Note:** Device onboarding can also be initiated from the **Assets** section on the left menu bar. Expand 'Assets' and choose 'Devices.' On the Device Inventory page, with 'Computers & Mobile' selected, scroll down to find the option for **Onboard devices.** Clicking on this option will direct you to the **Settings > Endpoints** page.
 
 1. In the **Downloads** pop-up:  
@@ -75,9 +78,9 @@ In this task, you will onboard a device to Microsoft Defender for Endpoint using
 
       ![](../media/l1213.png)
 
-1. Right-click on the downloaded zip file, choose **Extract All...**, ensure that **Show extracted files when complete** is checked, and then click **Extract**.
+1. Right-click on the downloaded zip file, choose **Extract All...**, ensure that **Show extracted files when complete** is checked **(1)**, and then click **Extract (2)**.
 
-   ![](../media/t3_g_e1_4.png) 
+   ![](../media/lab1-05-l1.png) 
 
 1. Right-click on the extracted file `WindowsDefenderATPLocalOnboardingScript.cmd` and choose **Properties**. Tick the **Unblock** checkbox located in the bottom right of the Properties window, and then click **OK**.
 
@@ -129,23 +132,25 @@ In this task, you will explore the Sentinel workspace to review and manage secur
 
     ![](../media/Lab01-task2-loganalyticworkspace.png)
 
-1. Navigate to the **Microsoft Defender** portal **Data connectors (2)** under **configuration (1)** section in the left sidebar and examine the currently configured connectors for collecting security-related data.
+1. Navigate to the **Microsoft Defender** amd in the left navigation pane, expand **Microsoft Sentinel (1)** and **Configuration (2)**, and then select **Data connectors (3)** to review the configured security data connectors.
 
-    ![](../media/img-01-123.png)
+    ![](../media/lab1-05-l2.png)
 
-1. Expand **Investigation & response** section from the left, choose **Incidents** to assess detected security incidents and alerts.
+1. Expand **Investigation & response** section from the left, choose **Incidents** to assess detected security **incidents and alerts**.
 
 1. Click on the status filter beside the search space, and then select the **Select all** checkbox to view all new, active, and closed incidents.
 
     ![](../media/Lab01-task2-selectall.png)
 
-   >**Note**: If the **Status filter** option isn't visible, simply click on **More** to access it.
+   >**Note:** If the **Status filter** option isn't visible, simply click on **More** to access it.
 
 1. Select the **Informational** incident from the list to view details and take necessary actions.
 
     ![](../media/Lab01-task2-informational.png)
 
-<validation step="08faf6a7-9700-4ffa-85a4-de53afb85777" />
+    > **Note:** Incident data may take up to 24–48 hours to appear in Microsoft Sentinel. If incidents are not visible yet, please proceed to the next lab.
+
+<validation step="5cc49b79-e188-4127-b294-65a47ab01d3b" />
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task.

@@ -1,6 +1,6 @@
 # Lab 02 - Integrate Logic App with Threat Protection and XDR
 
-## Estimated Duration: 120 minutes
+## Lab scenario
 
 The integration of a Logic App with Threat Protection involves configuring triggers and actions to receive alerts, while interaction with XDR solutions requires adding actions to exchange data, perform analyses, and trigger responses. Implementing conditional checks and logic within the Logic App allows for tailored handling of received threat information, ensuring effective responses and workflow execution before thorough testing and deployment to production environments. 
 
@@ -12,6 +12,8 @@ In this lab, you will perform the following:
 - Task 4: Create a Playbook in Microsoft Sentinel
 - Task 5: Update a Playbook in Microsoft Sentinel
 
+## Estimated Duration: 120 minutes
+
 ### Task 1: Connect the Windows security event connector
 
 In this task, you'll set up the connector to ensure effective log transmission and enhance your security monitoring framework.
@@ -20,11 +22,11 @@ In this task, you'll set up the connector to ensure effective log transmission a
    - Select **Microsoft Sentinel (1)**.
    - Expand **Content management (2)** and select **Content hub (3)**.
 
-      ![](../media/t3_g_e1_22.png)
+      ![](../media/lab1-05-l3.png)
 
 1. On the **Content hub** page, in the search bar, type **Windows Security Events (1)**, then select the checkbox for **Windows Security Events (2)** from the results.
 
-   ![](../media/cor_r_g_3.png)
+   ![](../media/lab1-05-l4.png)
 
 1. On the **Windows Security Events** solution page, click **Install**.
 
@@ -36,7 +38,7 @@ In this task, you'll set up the connector to ensure effective log transmission a
 
 1. On the left navigation pane, expand **Configuration (1)**, select **Data connectors (2)**, and in the search bar, type **Security Events via Legacy Agent (3)**. From the results, select **Security Events via Legacy Agent (4)**.
 
-   ![](../media/cor_r_g_5.png)
+   ![](../media/lab1-05-l5.png)
 
 1. On the **Security Events via Legacy Agent** page, click **Open connector page**.
 
@@ -73,6 +75,8 @@ In this task, you'll set up the connector to ensure effective log transmission a
 1. Verify that both virtual machines **s2vm-<inject key="DeploymentID" enableCopy="false" />** and **svm-<inject key="DeploymentID" enableCopy="false" />** display **This workspace (1)** under the **Log Analytics Connection** column, then click **Security Events via Legacy Agent (2)** in the breadcrumb to return to the connector page.
 
    ![](../media/t3_g_e2_14.png)
+
+   > **Note:** It may take 1–2 minutes for the virtual machines to appear as This workspace.
 
 1. In the **Instructions** section, under **Select which events to stream**, choose **All Events (1)** and click **Apply changes (2)**.
 
@@ -142,11 +146,11 @@ In this task, you will create a team in Microsoft Teams for use in the lab.
 
 1. On the **Create a team** page, enter the **Team name** as **SOC (1)** and select the **Private (2)** option. Provide **New Alerts (3)** as the **First channel name**, and then select **Create (4)**.
 
-    ![Lab overview.](../media/img-01-114.png)  
+    ![Lab overview.](../media/lab1-05-l7.png)  
 
 1. In the **Add members to SOC** screen, select the **Skip** button. 
 
-<validation step="26e090d3-6f07-4356-8b15-e42c6b478ea0" />
+<validation step="5e120148-dee3-45fe-8e37-6cbed679379f" />
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task.
@@ -172,7 +176,7 @@ In this task, you will create a Logic App that is used as a Playbook in Microsof
 
 1. Select the **Post-Message-Teams** folder.
 
-1. In the readme.md box, scroll down to the *Quick Deployment* section, **Deploy with incident trigger (recommended)** and select the **Deploy to Azure** button.
+1. Select the **readme.md** box, scroll down to the **Quick Deployment** section, **Deploy with incident trigger (recommended)** and select the **Deploy to Azure** button.
 
    ![Lab overview.](../media/lab03-task02-githubplaybook.png) 
 
@@ -200,15 +204,15 @@ In this task, you will update the new playbook you created with the proper conne
 
 1. From the left navigation menu, select **Automation (3)** under the **Configuration (2)** pane. On the **Automation** page, select the **Playbooks (4)** tab, and then select the **PostMessageTeams-OnIncident (5)** playbook to open the Logic App page.
 
-    ![Lab overview.](../media/img-01-118.png)
+    ![Lab overview.](../media/lab1-05-l8.png)
 
 1. On the Logic app page for **PostMessageTeams-OnIncident**, select **Edit**.
    
     ![Lab overview.](../media/img-01-119.png) 
 
-1. Select the *first* block **Microsoft Sentinel incident (1)**. Select the **Change connection (2)** option.
+1. Select the **first** block **Microsoft Sentinel incident (1)**. Select the **Change connection (2)** option.
    
-    ![Lab overview.](../media/img-01-120.png) 
+    ![Lab overview.](../media/lab1-05-l9.png) 
 
 1. On the **Change connection** page, select **Add new** and select **Sign in**.
 
@@ -218,7 +222,7 @@ In this task, you will update the new playbook you created with the proper conne
 
     ![Lab overview.](../media/img-01-122.png)
 
-1. Now select the *second block*, **Post a message (V3)**. On the **Post a message (V3)** page, select **Change connection**
+1. Now select the **second block**, **Post a message (V3)**. On the **Post a message (V3)** page, select **Change connection**
 
     ![Lab overview.](../media/img-01-124.png) 
 
@@ -232,11 +236,11 @@ In this task, you will update the new playbook you created with the proper conne
 
     ![Lab overview.](../media/img-01-126.png)
 
-1. Enter **SOC** as the **Team** name and **New Alerts** as the Channel.
+1. Enter **SOC (1)** as the **Team** name and **New Alerts (2)** as the **Channel**.
 
-1. Select **Save** on the command bar. The Logic App will be used in a future lab.
+1. Select **Save (3)** on the command bar. The Logic App will be used in a future lab.
    
-    ![Lab overview.](../media/img-01-128.png) 
+    ![Lab overview.](../media/lab1-05-l10.png) 
 
 ## Summary
 

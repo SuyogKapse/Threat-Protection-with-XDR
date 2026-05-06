@@ -1,4 +1,4 @@
-# Lab 02 - Create Detections
+# Lab 04 - Create Detections
 
 ### Estimated Duration: 30 minutes
 
@@ -24,7 +24,7 @@ In this task, you will create a detection for the first attack of the previous e
 
     ![](../media/l1802.png)
 
-1. Select **Logs** from the *General* section.
+1. Select **Logs** from the **General** section.
 
    ![](../media/cor_r_g_7.png)
 
@@ -42,7 +42,7 @@ In this task, you will create a detection for the first attack of the previous e
     SecurityEvent 
     | where Activity startswith "4624" 
     ```
-   ![](../media/cor_r_g_8.png)
+   ![](../media/lab1-05-l16.png)
 
     >**Note:** It may take **5 to 10 minutes** for the SecurityEvent data to become available after onboarding or activity generation. 
 
@@ -56,7 +56,7 @@ In this task, you will create a detection for the first attack of the previous e
     | extend timestamp = TimeGenerated, HostCustomEntity = Computer, AccountCustomEntity = SubjectUserName
     ```
 
-   ![](../media/cor_r_g_9.png)
+   ![](../media/lab1-05-l17.png)
 
 1. In the **Logs** window, click the ellipsis **(1)** in the command bar, select **New alert rule (2)**, and then select **Create Microsoft Sentinel alert (3)**.
    
@@ -66,14 +66,14 @@ In this task, you will create a detection for the first attack of the previous e
  
     - Enter **Startup RegKey (1)** in the *Name* field.  
     - Type **Startup RegKey in c:\temp (2)** in the *Description* field.  
-    - Select **High (3)** for *Severity*.  
-    - Choose **Persistence (4)** for *MITRE ATT&CK*.  
-    - Ensure *Status* is set to **Enabled (5)**.  
+    - Select **High (3)** for **Severity**.  
+    - Choose **Persistence (4)** for **MITRE ATT&CK**.  
+    - Ensure **Status** is set to **Enabled (5)**.  
     - Click **Next: Set rule logic > (6)**.  
 
         ![](../media/cor_r_g_12.png)
 
-1. On the *Set rule logic* tab, the *Rule query* should be populated already with your KQL query, under **Alert enhancement** expand *Entity mapping* and select **+ Add New Entity**.
+1. On the *Set rule logic* tab, the *Rule query* should be populated already with your KQL query, under **Alert enhancement** expand **Entity mapping** and select **+ Add New Entity**.
 
     |Entity|Identifier|Data Field|
     |:----|:----|:----|
@@ -120,7 +120,7 @@ In this task, you will create a detection for the second attack of the previous 
     | summarize count() by $table
     ```
 
-    ![](../media/6-1.png)
+    ![](../media/lab1-05-l18.png)
 
 1. The result might show events from different tables, but in our case, we want to investigate the SecurityEvent table. The EventID and Event that we are looking at is "4732 - A member was added to a security-enabled local group". With this, we will identify adding a member to a privileged group. **Run** the following KQL query to confirm:
 
@@ -130,7 +130,7 @@ In this task, you will create a detection for the second attack of the previous 
     | where TargetAccount == "Builtin\\Administrators"
     ```
 
-   ![](../media/6-2.png)
+   ![](../media/lab1-05-l19.png)
 
 1. Expand the row to see all the columns related to the record. The username of the account added as Administrator does not show. The issue is that instead of storing the username, we have the Security IDentifier (SID). **Run** the following KQL to match the SID to the username that was added to the Administrators group:
 
@@ -145,7 +145,7 @@ In this task, you will create a detection for the second attack of the previous 
         | project Acct1 = TargetSid, MachId1 = SourceComputerId, UserName1 = TargetUserName) on $left.MachId == $right.MachId1, $left.Acct == $right.Acct1
     ```
 
-    ![](../media/6-3.png)
+    ![](../media/lab1-05-l20.png)
 
 1. Extend the row to show the resulting columns, in the last one, we see the name of the added user under the *UserName1* column we *project* within the KQL query. It is important to help the Security Operations Analyst by providing as much context about the alert as you can. This includes projecting Entities for use in the investigation graph. **Run** the following query:
 
@@ -161,9 +161,11 @@ In this task, you will create a detection for the second attack of the previous 
     | extend timestamp = TimeGenerated, HostCustomEntity = Computer, AccountCustomEntity = UserName1
     ```
 
-   ![](../media/6-4.png)
+   ![](../media/lab1-05-l21.png)
 
-1. Now that you have a good detection rule, in the Logs window, select **+ New alert rule** in the command bar and then select **Create Microsoft Sentinel alert**. **Hint:** You might need to select the ellipsis (...) button in the command bar.
+1. Now that you have a good detection rule, in the Logs window, in the **Logs** window, click the ellipsis **(1)** in the command bar, select **+ New alert rule (2)** in the command bar and then select **Create Microsoft Sentinel alert (3)**.
+
+    ![](../media/cor_r_g_11.png)
 
 1. You will be navigated to **Analytics rule wizard** page. In the *General* tab provide the values:
 
@@ -177,7 +179,6 @@ In this task, you will create a detection for the second attack of the previous 
 1. Select **Next: Set rule logic >** button. 
 
    ![](../media/6-5.png)
-
 
 1. On the *Set rule logic* tab, the *Rule query* should be populated already with your KQL query, and add the details for entities under *Alert enhancement - Entity mapping* by selecting **+ Add new entity**.
 
@@ -212,10 +213,12 @@ In this task, you will create a detection for the second attack of the previous 
 
    >**Note:** You have already assigned permissions to the playbook, so it must be available if not click on manage permissions and select it manually and it will be available by now
 
-   ![](../media/new-xdr-lab3-02.jpg)
+   ![](../media/lab1-05-l22.png)
 
 1. Select the **Next: Review + create >** button.
   
+    ![](../media/lab1-05-l23.png)
+
 1. On the *Review + create* tab, select the **Save** button to create the new Scheduled Analytics rule.
 
 ## Summary

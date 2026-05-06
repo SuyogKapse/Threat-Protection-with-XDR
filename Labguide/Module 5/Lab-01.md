@@ -1,4 +1,4 @@
-# Lab 01 - Mitigate threats using Microsoft 365 Defender 
+# Lab 07 - Mitigate threats using Microsoft 365 Defender 
 
 ## Estimated Duration: 60 minutes
 
@@ -7,106 +7,15 @@ You're a Security Operations Analyst working at a company that implemented Micro
 ## Lab objectives
 
 In this lab, you will perform the following in the M365 Defender portal:
-- Task 1: Onboard a Device 
-- Task 2: Manage Incidents
-- Task 3: Investigate Alerts
 
-### Task 1: Onboard a Device
+- Task 1: Manage Incidents
+- Task 2: Investigate Alerts
 
-In this task, you will onboard a device to Microsoft Defender for Endpoint using an onboarding script.
-
-1. Open a new tab and navigate to the **Microsoft Defender** portal by following the link:
-
-    ```
-    https://security.microsoft.com
-    ```
-
-1. If a pop-up introducing the improved security center appears after signing in, click the **X** in the top-right corner to skip the tour.
-
-   ![](../media/t3_g_e1_1.png)
-
-1. Navigate to **System (1)** in drop down select **Settings (2)** in the left menu bar, and then, on the Settings page, choose **Endpoints (3)**.
-
-   ![](../media/l1211.png)
-
-   > **Note:** The **Endpoints** option under **Settings** may take a few moments to appear after the initial setup.  
-   > If you don't see it navigate to [https://security.microsoft.com/securitysettings/endpoints/integration](https://security.microsoft.com/securitysettings/endpoints/integration) to go to the Endpoints page.
-
-1. Navigate to the **Onboarding (1)** option in the Device Management section and on the **Endpoints** page and  and configure the following: 
-   - Select **Windows Server 2019, 2022, and 2025 (2)** from the operating system drop-down.  
-   - In the **Connectivity type** drop-down, select **Standard (3)**.  
-   - In the **Deployment method** drop-down, choose **Local Script (for up to 10 devices) (4)**.  
-   - Click **Download onboarding package (5)**.
-
-      ![](../media/t3_g_e1_2.png) 
-   > **Note:** Device onboarding can also be initiated from the **Assets** section on the left menu bar. Expand 'Assets' and choose 'Devices.' On the Device Inventory page, with 'Computers & Mobile' selected, scroll down to find the option for **Onboard devices.** Clicking on this option will direct you to the **Settings > Endpoints** page.
-
-1. In the **Downloads** pop-up:  
-   - Select the **WindowsDefenderATPOnboardingPackage.zip** file.  
-   - Click the folder icon to choose **Show in folder**.  
-   - **Hint:** If you cannot locate the file, check the `C:\Users\admin\Downloads` directory.
-
-      ![](../media/l1213.png)
-
-1. Right-click on the downloaded zip file, choose **Extract All...**, ensure that **Show extracted files when complete** is checked, and then click **Extract**.
-
-   ![](../media/t3_g_e1_4.png) 
-
-1. Right-click on the extracted file `WindowsDefenderATPLocalOnboardingScript.cmd` and choose **Properties**. Tick the **Unblock** checkbox located in the bottom right of the Properties window, and then click **OK**.
-
-   ![](../media/sc200-mod2-unblock.png) 
-
-1. Once again, right-click on the extracted file **WindowsDefenderATPLocalOnboardingScript.cmd** and opt for **Run as Administrator**.
-
-   ![](../media/l1216.png)
-
-   > **Hint:** If the Windows SmartScreen window appears, click on **More info**, and then select **Run anyway**.
-
-1. When the "User Account Control" window appears, select **Yes** to allow the script to run, answer **Y** to the question presented by the script, and press **Enter**. Once complete, you should see a message in the command screen that says *Successfully onboarded machine to Microsoft Defender for Endpoint*.
-
-1. Press any key to continue. This action will close the Command Prompt window.
-
-   ![](../media/SC-200-img25.png)
-
-1. Back on the Onboarding page within the Microsoft Defender XDR portal, navigate to the "2. Run a detection test" section, and copy the detection test script by clicking the **Copy** button.
-
-   ![](../media/l1219.png) 
-
-1. In the Windows search bar of the virtual machine, type **cmd (1)**, right-click **Command Prompt (2)**, and select **Run as administrator (3)**.
-
-   ![](../media/t3_g_e1_5.png) 
-
-1. When the "User Account Control" window appears, select **Yes** to allow the app to run. 
-
-1. Paste the script by right-clicking in the **Administrator: Command Prompt** window and press **Enter** to run it.
-
-   ![](../media/t3_g_e1_6.png) 
-
-   > **Note:** The window closes automatically after running the script.
-
-1. In the Microsoft Defender XDR portal, navigate to the left-hand menu, and under the **Assets (1)** area, select **Devices (2)**. If the device is not shown, proceed with the next task and return to check it later. It can take up to 60 minutes for the first device to be displayed in the portal.
-
-   ![](../media/l1223.png) 
-
-   > **Note:** If you have completed the onboarding process and don't see devices in the Devices list after an hour, it might indicate an onboarding or connectivity problem.
-
-<validation step="31d7f5a4-6b5f-4ac5-9ec2-b0a6150b59eb" />
-
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-> - Hit the Validate button for the corresponding task.
-> - If you receive a success message, you can proceed to the next task.
-> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
-> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
-
-### Task 2: Manage Incidents
+### Task 1: Manage Incidents
 
 In this task, you will manage the incidents in the M365 Defender portal.
 
-1. If you are not already at the Microsoft 365 Defender portal in your Microsoft Edge browser, go to (https://security.microsoft.com). 
-
-1. In the **Sign in** dialog box, copy and paste * Email/Username: <inject key="AzureAdUserEmail"></inject> and then select Next.
-
-1. In the **Enter password** dialog box, copy and paste * Password: <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
+1. Navigate back to Microsoft 365 Defender portal in your Microsoft Edge browser.
 
 1. From the sidebar menu, under **Incidents and Alerts**, select **Incidents**. Click on the incident **Created**.
 
@@ -140,7 +49,7 @@ In this task, you will manage the incidents in the M365 Defender portal.
 
     ![Lab overview.](../media/lab10-task1-summary.png)
 
-### Task 3: Investigate Alerts
+### Task 2: Investigate Alerts
 
 In this task, you will investigate and mitigate the alerts through recommendations by Microsoft Defender.
 
