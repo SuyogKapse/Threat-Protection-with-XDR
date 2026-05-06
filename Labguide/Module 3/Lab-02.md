@@ -1,4 +1,4 @@
-# Lab 02 - Create Detections
+# Lab 04 - Create Detections
 
 ### Estimated Duration: 30 minutes
 
@@ -222,4 +222,4 @@ In this task, you will create a detection for the second attack of the previous 
 
 In this lab, you created custom analytics rules in Microsoft Sentinel to detect persistence and privilege escalation attacks using KQL queries. Next, you will investigate an incident triggered by these detections. Click **Next** to continue with the lab.
 
-## You've successfully completed this lab.
+## You've successfully completed this lab. Click **Next** to continue with the lab.
