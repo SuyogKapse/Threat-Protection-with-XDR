@@ -1,4 +1,4 @@
-# Lab 01 - Mitigate threats using Microsoft 365 Defender 
+# Lab 07 - Mitigate threats using Microsoft 365 Defender 
 
 ## Estimated Duration: 60 minutes
 
@@ -188,4 +188,4 @@ In this task, you will investigate and mitigate the alerts through recommendatio
 
 In this lab, you utilized Microsoft 365 Defender to onboard devices, manage incidents, and investigate alerts. You navigated the Microsoft 365 Defender portal to onboard endpoints, reviewed and managed security incidents, and analyzed alerts to identify potential threats. By executing these tasks, you successfully mitigated security risks and enhanced your organization's security operations, demonstrating effective use of Microsoft Defender tools in real-world scenarios.
 
-## You have successfully completed the lab.
+## You have successfully completed all the labs.
