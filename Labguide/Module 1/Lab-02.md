@@ -246,4 +246,4 @@ In this task, you will update the new playbook you created with the proper conne
 
 In this lab, you integrated a Logic App with Microsoft Sentinel and Microsoft Defender for Cloud to automate threat protection and responses. You connected the Windows Security Event connector, enabled Defender for Cloud, and created a Security Operations Center (SOC) team in Microsoft Teams. You also developed and updated a playbook in Sentinel to automate incident response workflows and onboarded a device to Microsoft Defender for Endpoint. This lab demonstrated how to configure and automate threat detection and response using Logic Apps, Sentinel, and Defender for Cloud.
 
-## You have successfully completed the lab.
+## You've successfully completed this lab. Click **Next** to continue with the lab.

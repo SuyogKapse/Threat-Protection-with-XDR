@@ -280,4 +280,4 @@ In this task, you will explore using notebooks in Microsoft Sentinel.
 
 In this lab, you set up an Azure Sentinel workspace and integrated Microsoft Defender for Cloud to enhance security operations. You connected data sources, simulated attacks, and used KQL to create custom detections. You also automated incident responses with Logic Apps playbooks, demonstrating a comprehensive approach to threat detection and response. 
 
-## You have successfully completed the lab.
+## You've successfully completed this lab. Click **Next** to continue with the lab.

@@ -56,4 +56,4 @@ In this task, you will investigate a Microsoft Sentinel incident by reviewing it
 
 Investigated an incident, reviewed evidence, and managed incident properties in the Microsoft Defender portal.
 
-## You have successfully completed the lab
+## You've successfully completed this lab. Click **Next** to continue with the lab.
