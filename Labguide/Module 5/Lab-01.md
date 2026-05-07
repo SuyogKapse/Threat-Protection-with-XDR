@@ -1,4 +1,7 @@
-# Lab 07 - Mitigate threats using Microsoft 365 Defender 
+# Lab 07 - Mitigate threats using Microsoft 365 Defender [READ ONLY]
+
+> **Note:** `This lab is provided in a read-only format for the incident investigation section, as it may take approximately 24–48 hours for incidents to appear in the Microsoft Defender portal after alert generation. If incidents are not available within the lab timeframe, you can still follow the documented steps to understand the incident management workflow and portal experience. Alternatively, navigate to the Incidents & Alerts > Alerts page to verify whether any related alerts have been generated during the lab session.`
+
 
 ## Lab scenario
 
@@ -18,8 +21,6 @@ In this task, you will manage the incidents in the M365 Defender portal.
 1. Navigate back to Microsoft 365 Defender portal in your Microsoft Edge browser.
 
 1. From the sidebar menu, under **Incidents and Alerts**, select **Incidents**. Click on the incident **Created**.
-
-    >**Note:** It may take 24-48 hours for incidents to appear in the Defender portal. If they are not generated within the lab timeframe, you can follow the steps below for an overview on how to manage incidents. Alternatively, you can visit the **Alerts** page under **Incidents and Alerts** to check for any alerts related to the incident, as alerts might be generated during the lab timeframe.
 
 1. To manage an incident, click on **Manage Incident** to edit the details of this incident.
 
