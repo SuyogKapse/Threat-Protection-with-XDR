@@ -116,7 +116,7 @@ In this task, you will onboard a device to Microsoft Defender for Endpoint using
 
    ![](../media/l1223.png) 
 
-   > **Note:** If you have completed the onboarding process and don't see devices in the Devices list after an hour, it might indicate an onboarding or connectivity problem.
+   > **Note:** `If you have completed the onboarding process and don't see devices in the Devices list after an hour, it might indicate an onboarding or connectivity problem.`
 
 ## Task 3: Explore Sentinel workspace
 
@@ -146,7 +146,7 @@ In this task, you will explore the Sentinel workspace to review and manage secur
 
     ![](../media/Lab01-task2-informational.png)
 
-    > **Note:** Incident data may take up to 24–48 hours to appear in Microsoft Sentinel. If incidents are not visible yet, please proceed to the next lab.
+    > **Note:** `Incident data may take up to 24–48 hours to appear in Microsoft Sentinel. If incidents are not visible yet, please proceed to the next lab.`
 
 <validation step="5cc49b79-e188-4127-b294-65a47ab01d3b" />
 

@@ -95,7 +95,7 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
 
    ![](../media/gg-1-2.png)
 
-   > **Note:** If you don’t see the pop-up prompt, simply continue and follow the lab guide steps as shown below.
+   > **Note:** `If you don’t see the pop-up prompt, simply continue and follow the lab guide steps as shown below.`
 
    >**Note:** This enables advanced posture capabilities like attack path analysis and permissions management.
 

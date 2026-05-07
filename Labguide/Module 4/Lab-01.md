@@ -201,7 +201,7 @@ In this task, you will use a Search job to look for a C2.
 
    ![](../media/lab1-05-l35.png)
 
-   > **Note:** If the restoration details or options are not visible, please refresh the page.
+   > **Note:** `If the restoration details or options are not visible, please refresh the page.`
  
 1. On the **Restoration** window, review the settings and click **Restore** to begin the process.
 
@@ -261,7 +261,7 @@ In this task, you will explore using notebooks in Microsoft Sentinel.
 
     ![Picture 1](../media/img-01-108.png)
 
-    >**Note:** if the workspace is not created click on create new workspace and follow from step 3-5.
+    >**Note:** `if the workspace is not created click on create new workspace and follow from step 3-5.`
 
 1. Once the saving is done, select the **Launch notebook** button. This will take you to the Microsoft Azure Machine Learning Studio.
 
