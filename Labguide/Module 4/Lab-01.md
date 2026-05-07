@@ -200,12 +200,12 @@ In this task, you will use a Search job to look for a C2.
 1. On the **Newtable_SRCH** panel, click **Restore** to investigate the retrieved data.
 
    ![](../media/lab1-05-l35.png)
+
+   > **Note:** If the restoration details or options are not visible, please refresh the page.
  
 1. On the **Restoration** window, review the settings and click **Restore** to begin the process.
 
    ![](../media/ex3_g_tr_19.png)
-
-   > **Note:** If the restoration details or options are not visible, refresh the page.
 
 1. Review the options available and then select the **Cancel** button.
 
@@ -280,6 +280,6 @@ In this task, you will explore using notebooks in Microsoft Sentinel.
 
 ## Summary
 
-In this lab, you set up an Azure Sentinel workspace and integrated Microsoft Defender for Cloud to enhance security operations. You connected data sources, simulated attacks, and used KQL to create custom detections. You also automated incident responses with Logic Apps playbooks, demonstrating a comprehensive approach to threat detection and response. 
+In this lab, you performed threat hunting in Microsoft Sentinel by creating hunting queries, bookmarks, and NRT analytics rules to detect suspicious PowerShell activity. You also used Search Jobs to investigate potential Command and Control (C2) indicators and explored Microsoft Sentinel Notebooks with Azure Machine Learning integration for advanced security analysis.
 
 ## You've successfully completed this lab. Click **Next** to continue with the lab.
