@@ -1,6 +1,6 @@
 # Lab 07 - Mitigate threats using Microsoft 365 Defender [READ ONLY]
 
-> **Note:** `This lab is provided in a read-only format for the incident investigation section, as it may take approximately 24–48 hours for incidents to appear in the Microsoft Defender portal after alert generation. If incidents are not available within the lab timeframe, you can still follow the documented steps to understand the incident management workflow and portal experience. Alternatively, navigate to the Incidents & Alerts > Alerts page to verify whether any related alerts have been generated during the lab session.`
+> **Note:** `This lab is provided in a read-only format for the incident investigation section, as it may take approximately 24–48 hours for incidents to appear in the Microsoft Defender portal after alert generation. If incidents are not available within the lab timeframe, you can still follow the documented steps to understand the incident management workflow and portal experience. Alternatively, navigate to the *Incidents & Alerts > Alerts* page to verify whether any related alerts have been generated during the lab session.`
 
 
 ## Lab scenario
