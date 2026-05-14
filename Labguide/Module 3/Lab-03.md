@@ -37,6 +37,8 @@ In this task, you will investigate a Microsoft Sentinel incident by reviewing it
 
    ![](../media/cor_r_g_23.png)
 
+   > **Note:** The generation of the Evidence and Response Log may take approximately 4–5 hours, depending on the volume of data and processing time. You may continue and complete the remaining lab activities in the meantime.
+
 1. On the incident details page, click **Manage incident (1)** to modify the incident’s properties or take remediation actions.
 
    ![](../media/cor_r_g_24.png)
@@ -57,3 +59,5 @@ In this task, you will investigate a Microsoft Sentinel incident by reviewing it
 Investigated an incident, reviewed evidence, and managed incident properties in the Microsoft Defender portal.
 
 ## You've successfully completed this lab. Click **Next** to continue with the lab.
+
+![](../media/page_no_7.png)
