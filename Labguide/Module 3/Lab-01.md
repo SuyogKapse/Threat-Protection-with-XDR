@@ -211,3 +211,5 @@ In this task, you will create a playbook in Microsoft Sentinel by selecting the 
 In this exercise, you simulated various security attacks using Microsoft Sentinel and Microsoft Defender for Cloud to generate incidents for investigation. Next, you will create custom analytics rules to detect persistence and privilege elevation attacks.
 
 ## You've successfully completed this lab. Click **Next** to continue with the lab.
+
+![](../media/page_no_5.png)

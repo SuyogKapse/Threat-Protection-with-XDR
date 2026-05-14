@@ -1,8 +1,4 @@
-# Threat Protection with XDR
-
-## Overview
-
-Threat Protection with Extended Detection and Response (XDR) is a game-changing paradigm in cybersecurity, providing an unparalleled shield against modern threats. Unlike conventional security measures, XDR doesn’t just stop at surface-level defense; it orchestrates a symphony of security layers, unifying disparate tools and technologies to create an impenetrable fortress for an organization.
+# Before Hands-On Lab
 
 ### Key features of Threat Protection with XDR
 
@@ -39,3 +35,7 @@ Based on your interests, you can use this lab guide as a reference to learn and 
 - Microsoft Sentinel
 - Microsoft Teams
 - Logic App
+
+Now, click on Next from the lower right corner to move on to the next page.
+
+![Start Your Azure Journey](./media/page_no_2.png)

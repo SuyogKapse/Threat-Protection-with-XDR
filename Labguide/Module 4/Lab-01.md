@@ -283,3 +283,5 @@ In this task, you will explore using notebooks in Microsoft Sentinel.
 In this lab, you performed threat hunting in Microsoft Sentinel by creating hunting queries, bookmarks, and NRT analytics rules to detect suspicious PowerShell activity. You also used Search Jobs to investigate potential Command and Control (C2) indicators and explored Microsoft Sentinel Notebooks with Azure Machine Learning integration for advanced security analysis.
 
 ## You've successfully completed this lab. Click **Next** to continue with the lab.
+
+![](../media/page_no_8.png)

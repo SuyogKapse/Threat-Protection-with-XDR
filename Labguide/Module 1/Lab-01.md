@@ -161,3 +161,5 @@ In this task, you will explore the Sentinel workspace to review and manage secur
 In this lab, you configured a Logic App with Threat Protection by setting up triggers and actions to receive alerts. In the next lab, you will test the workflow and interact with XDR solutions for automated responses.
 
 ## You've successfully completed this lab. Click **Next** to continue with the lab.
+
+![](../media/page_no_3.png)
